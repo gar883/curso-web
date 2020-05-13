@@ -1,36 +1,55 @@
 html{
+    box-sizing: border-box;
     font-size: 62,5%;/*reset para REMS - 62,5% = 10px de 16px*/
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
 }
 /**GLOBALES**/
-.contenedor{
-    max-width: 120rem;
-    margin:0 auto;
+    img {
+            max-width: 100%;
+        }
+
+    .contenedor{
+        width: 95%;
+        max-width: 120rem;
+        margin:0 auto;
+        align-content: center;
+         }
+        
+    h1{
+        font-size: 3.8rem;
     }
-h1{
-    font-size: 3.8rem;
-}
-h2{
-    font-size: 3.4rem;
-}
-h3{
-    font-size: 3rem;
-}
-h4{
-    font-size: 2.4rem;
-}
+    h2{
+        font-size: 3.4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: 2.4rem;
+    }
 
 /** utilidades **/
 .section{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.fw-400{
+    font-weight: 400;
+}
+.centrar-texto{
+    
+    text-align: center;
+}
 
-/*header*/
+    /*header*/
 .header-del-sitio{
     
     background: url(img/header.jpg);
@@ -39,18 +58,20 @@ h4{
     background-size: cover;
     background-position: center center;
     }
-/*contenido header*/
+
 .contenido-header{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
  }
 .contenido-header h1{
     color: white;
+    font-size: 3.5rem;
     padding-bottom: 2rem;
-    max-width: 60rem;
-    line-height: 2;
+    max-width: 70rem;
+    text-transform: uppercase;
     
     
 }
@@ -67,15 +88,27 @@ h4{
     margin-right: 2rem;
     font-size: 1.8rem;
     }
-.nav-principal a:last-of-type{
-    margin-right: 0;
-}
-/*CONTENEDOR*/
-.contenedor{
-    align-content: center;
+    .nav-principal a:last-of-type{
+        margin-right: 0;
     }
-/*CONTENEDOR SOBRE NOSOTROS*/
-.iconos-nosotros{
-    display: flex;
-}
+    .nav-principal a:hover{
+        color:cadetblue;
+    }
+/*CONTENEDOR*/
 
+/*CONTENEDOR SOBRE NOSOTROS*/
+
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .icono{
+        flex-basis:calc(33.3% - 1rem);
+        text-align:center;
+        
+   }
+   .iconos-nosotros h3{
+       text-transform: uppercase;
+   }
+  
