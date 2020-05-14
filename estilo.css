@@ -48,7 +48,9 @@ body{
     
     text-align: center;
 }
-
+.d-block{
+    display: block!important;
+}
     /*header*/
 .header-del-sitio{
     
@@ -94,7 +96,31 @@ body{
     .nav-principal a:hover{
         color:cadetblue;
     }
-/*CONTENEDOR*/
+/*BOTONES*/
+.boton{
+    color:#ffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+
+.boton-amarillo{
+    background-color: #e08709;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boton-verde{
+    background-color: #71b100;
+    }
 
 /*CONTENEDOR SOBRE NOSOTROS*/
 
@@ -118,5 +144,49 @@ body{
 }
 .anuncio{
     flex-basis: calc(33.3% - 1rem);
+    border:0.2rem solid #b5b5b5;
+    background: #f5f5f5;
 }
-   
+.contenido-anuncio{
+    padding: 2rem;
+}
+.contenido-anuncio h3,
+.contenedor-anuncios p{
+    margin: 0;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+   justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+}
+.iconos-caracteristicas li{
+    flex: 1;
+    display: flex;
+    }
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+.precio{
+    color: rgb(32, 168, 78);
+    font-weight: 700;
+}
+/* contacto home*/
+.imagen-contacto{
+    background: url(img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1;
+    color: #ffff;
+    
+}
+.contenido-contacto{
+    font-size: 1.8rem;
+}
