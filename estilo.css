@@ -111,4 +111,12 @@ body{
    .iconos-nosotros h3{
        text-transform: uppercase;
    }
-  
+  /* ANUNCIOS*/
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
+}
+   
