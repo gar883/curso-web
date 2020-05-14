@@ -36,7 +36,7 @@ body{
         font-size: 2.4rem;
     }
 
-/** utilidades **/
+/** UTILIDADES **/
 .section{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -163,7 +163,7 @@ body{
     max-width: 500px;
 }
 .iconos-caracteristicas li{
-    flex: 1;
+   /* flex: 1;*/
     display: flex;
     }
 .iconos-caracteristicas li img{
@@ -189,4 +189,61 @@ body{
 }
 .contenido-contacto{
     font-size: 1.8rem;
+}
+/*seccion inferior */
+.seccion-inferior{
+    display:flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+    }
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+    border-radius: 30%;
+}
+.texto-entrada span{
+    color:#e08709;
+}
+/* TESTIMONEALES*/
+.testimonial{
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    background: #71b100;
+    border-radius: 2rem;
+}
+.testimonial p{
+    text-align: right;
 }
