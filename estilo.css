@@ -12,9 +12,11 @@ body{
     line-height: 2;
 }
 /**GLOBALES**/
-img{
+.img{
         max-width: 100%;
+        
         }
+
 
 .contenedor{
         width: 95%;
@@ -51,6 +53,9 @@ h4{
 }
 .contenido-centrado{
     max-width: 800px;
+}
+.contenido-centrado{
+    max-width: 80rem;
 }
     /*header*/
 .header-del-sitio{
@@ -152,16 +157,21 @@ h4{
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/* contenido flexible multi linea*/
 }
 .anuncio{
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);/*shorthand*/
+    /*flex-grow: 0;/*El contenido crece por encima de la base (flex-basis)*/
+    /*flex-shrink: 0;/*el contenido no se encoje, guarda su forma original*/
+    /*flex-basis: calc(33.3% - 1rem);*/
     border:0.2rem solid #b5b5b5;
     background: #f5f5f5;
     margin-bottom: 2rem;
 }
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
 .contenido-anuncio{
     padding: 2rem;
     
@@ -175,7 +185,7 @@ h4{
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    flex: 1;
+    flex:1;/*evita que los iconos se compriman y se encimen uno sobre otro*/
     max-width: 500px;
 }
 .iconos-caracteristicas li{
@@ -295,9 +305,11 @@ h4{
 }
 
 /* PAGINAS INTERNAS */
+
+/*PAGINA MAS SOBRE NOSOTROS*/
 .contenido-nosotros{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;/*divide el contenido en dos columnas de 50% para cada una*/
     grid-column-gap: 2rem;
 }
 
@@ -308,13 +320,17 @@ h4{
     padding: 1rem 0 3rem 0;
     text-transform: capitalize;
 }
-.heding-nosotros{
+.heding{
     text-transform: capitalize;
 }
 
 /* PAGINA ANUNCIOS*/
 
 
-
-
+/*ANUNCIO*/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
 
