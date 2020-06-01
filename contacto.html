@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CONTACTO</title>
-    <link href="estilo.css" rel="stylesheet">
-</head>
-<body>
-    <a href="index.html">VOLVER</a>
-</body>
+
+<html lang= es>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="alquiler,venta,casas,departamentos">
+        <link rel="stylesheet" href="normalize.css";>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilo.css">
+        
+    </head>
+    
+    <body>
+         <header class="header-del-sitio">
+             <div class="contenedor contenido-header">
+                 <div class="barra">
+                            
+                        <a href="index.html">
+                           <img src="img/logo.svg" alt="Logotipo Bienes Raices">
+                        </a>
+                    <nav class="nav-principal">
+                       <a href="nosotros.html" class="barra-navegacion">Nosotros</a>
+                       <a href="anuncios.html" class="barra-navegacion">Anuncios</a>
+                       <a href="blog.html"class="barra-navegacion">Blog</a>
+                       <a href="contacto.html"class="barra-navegacion">Contacto</a>
+                    </nav>
+                  </div>
+                </div>
+        </header> 
+          
+          <h1 class="fw-400 centrar-texto">Contacto</h1>
+          <img src="img/destacada2.jpg" alt="imagen principal">
+          
+          <main class="contenedor section contenido-centrado">
+              <h2 class="fw-400 centrar-texto">Llena el formulario de Contacto</h2>
+              <form action="">
+                <fieldset>
+                       <legend>Informacion Personal</legend>
+                        <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                        <label for="email">E-Mail:</label>
+                            <input type="email" id="email" placeholder="Tu Correo electronico" required>
+
+                        <label for="telefono">Telefono:</label>
+                            <input type="tel" id="telefono" placeholder="Tu Telefono" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea  id="mensaje"></textarea>
+                </fieldset>
+                
+                <fieldset>
+                <legend>Informacion sobre Propiedad</legend>
+                    <label for="opciones">Seleccione una de las opciones:</label>
+                    <select id="opciones">
+                        <option value="" disabled selected>--seleccione--</option>
+                         <option value="compra">Compra</option>
+                        <option value="vende">Vende</option>
+                        <option value="alquila">Alquila</option>
+                    </select>
+                        
+                        <label for="precio" min="0">precio</label>
+                        <input type="number" id=precio>
+                        
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Contacto</legend>
+                    
+                    <p>Como desea ser contactado:</p>
+                       <div class="forma-contacto">
+                             <label for="telefono">Telefono:</label>
+                            <input type="radio" name="contacto" value="telefono" id="telefono">  
+
+                            <label for="email">E-mail:</label>
+                            <input type="radio" name="contacto" value="correo" id="email">
+                        </div>
+                            <p>Si eligio telefono,por favor indique fecha y hora en que desea ser contactado.</p>
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha">
+
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" min="9:00" max="18:00">
+               </fieldset>
+                
+                <input type="submit" value="Enviar" class="boton boton-verde">
+              </form>
+          </main>
+      
+        <footer class="site-footer section">
+            <div class="contenedor contenedor-footer">
+         <nav class="nav-principal">
+               <a href="nosotros.html"class="barra-navegacion">Nosotros</a>
+               <a href="anuncios.html" class="barra-navegacion">Anuncios</a>
+               <a href="blog.html"class="barra-navegacion">Blog</a>
+               <a href="contacto.html"class="barra-navegacion">Contacto</a>
+        </nav>
+            <p class="copy">Todos los derechos reservados &copy; 2019-2023</p>
+            </div>
+        </footer>
+    </body>
 </html>
