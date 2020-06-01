@@ -65,8 +65,8 @@ h4{
         padding: 1rem 0 3rem 0;
   
     }
-.header-del-sitio.inicio{
-      background: url(img/header.jpg);
+.inicio{
+    background: url(img/header.jpg);
     height: 100vh;
     min-height: 60rem;
     background-size: cover;
@@ -333,6 +333,7 @@ h4{
 }    
 
 /*CONTACTO*/
+
 form p{
     font-size: 1.5rem;
     
